@@ -1,0 +1,170 @@
+<DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Task number 2</title>
+        <link rel="stylesheet" href="DefaultTask2.css"> 
+    </head>
+    <body class="default">
+<div class="text"> Задача 2</div>
+        <table class="table"> 
+          <tr>
+              <td>
+              <p class="text2">Код алгоритма:</p>  
+              <p class="text2">Файл hata.java.</p>
+              <p class="text2">import java.util.ArrayList;</p>
+              <p class="text2">import java.util.Scanner;</p></br>
+        
+              <p class="text2">class House {</p>
+        <p style="text-indent:40px" class="text2">private int id;</p>
+        <p style="text-indent:40px" class="text2">private int apartmentNumber;</p>
+        <p style="text-indent:40px" class="text2">private double area;</p>
+        <p style="text-indent:40px" class="text2">private int floor;</p>
+        <p style="text-indent:40px" class="text2">private int numberOfRooms;</p>
+        <p style="text-indent:40px" class="text2">private String street;</p>
+        <p style="text-indent:40px" class="text2">private String buildingType;</p>
+        <p style="text-indent:40px" class="text2">private int yearsInUse;</p>
+        
+        <p style="text-indent:80px" class="text2">public House(int id, int apartmentNumber, double area, int floor, int numberOfRooms, String street,</p>
+        
+        <p style="text-indent:120px" class="text2">String buildingType, int yearsInUse) {</p>
+        
+        <p style="text-indent:80px" class="text2"> this.id = id;</p>
+        <p style="text-indent:80px" class="text2"> this.apartmentNumber = apartmentNumber;</p>
+        <p style="text-indent:80px" class="text2"> this.area = area;</p>
+        <p style="text-indent:80px" class="text2"> this.floor = floor;</p>
+        <p style="text-indent:80px" class="text2"> this.numberOfRooms = numberOfRooms;</p>
+        <p style="text-indent:80px" class="text2"> this.street = street;</p>
+        <p style="text-indent:80px" class="text2"> this.buildingType = buildingType;</p>
+        <p style="text-indent:80px" class="text2"> this.yearsInUse = yearsInUse;</p>
+        <p style="text-indent:40px" class="text2"> }</p></br>
+        
+        <p style="text-indent:40px" class="text2"> public House() {</p>
+        
+        <p style="text-indent:80px" class="text2"> this(0, 0, 0.0, 0, 0, "Unknown", "Unknown", 0);</p>
+        
+        <p style="text-indent:40px" class="text2"> }</p></br>
+        
+        
+        
+        <p style="text-indent:40px" class="text2">  public int getNumberOfRooms() {</p>
+        
+        <p style="text-indent:80px" class="text2"> return numberOfRooms;</p>
+        
+        <p style="text-indent:40px" class="text2"> }</p></br>
+        
+        
+        
+        <p style="text-indent:40px" class="text2"> public int getFloor() {</p>
+        
+        <p style="text-indent:80px" class="text2"> return floor;</p>
+        
+        <p style="text-indent:40px" class="text2"> }</p></br>
+        
+        
+        
+        <p style="text-indent:40px" class="text2"> public double getArea() {</p>
+        
+        <p style="text-indent:80px" class="text2"> return area;</p>
+        
+        <p style="text-indent:40px" class="text2"> }</p></br>
+       
+        
+        <p style="text-indent:40px" class="text2"> @Override</p>
+        <p style="text-indent:40px" class="text2"> public String toString() {</p>
+        <p style="text-indent:80px" class="text2"> return "House{" +</p>
+        <p style="text-indent:120px" class="text2">  "id=" + id +</p>
+        <p style="text-indent:120px" class="text2">  ", apartmentNumber=" + apartmentNumber +</p>
+        <p style="text-indent:120px" class="text2">  ", area=" + area +</p>
+        <p style="text-indent:120px" class="text2">  ", floor=" + floor +</p>
+        <p style="text-indent:120px" class="text2">  ", numberOfRooms=" + numberOfRooms +</p>
+        <p style="text-indent:120px" class="text2">  ", street='" + street + '\'' +</p>
+        <p style="text-indent:120px" class="text2">  ", buildingType='" + buildingType + '\'' +</p>
+        <p style="text-indent:120px" class="text2">  ", yearsInUse=" + yearsInUse +</p>
+        <p style="text-indent:120px" class="text2">  '}';</p>
+        <p style="text-indent:80px" class="text2"> }</p>
+        <p style="text-indent:40px" class="text2"> }</p></br> 
+
+        <p class="text2">public class hata {</p>
+        <p style="text-indent:40px" class="text2"> public static void main(String[] args) {</p>
+        
+        <p style="text-indent:80px" class="text2"> ArrayList<House> houses = new ArrayList<>();</p>
+        <p style="text-indent:80px" class="text2"> houses.add(new House(1, 101, 45.5, 2, 2, "Main Street", "Brick", 10));</p>
+        <p style="text-indent:80px" class="text2"> houses.add(new House(2, 102, 60.0, 3, 3, "2 Street", "Panel", 5));</p>
+
+        <p style="text-indent:120px" class="text2"> houses.add(new House(3, 103, 75.0, 5, 4, "3 Street", "Monolithic", 15));</p></br>
+
+        
+        <p style="text-indent:80px" class="text2"> houses.add(new House(4, 104, 55.0, 7, 3, "Main Street", "Brick", 12));</p>
+        <p style="text-indent:80px" class="text2"> houses.add(new House(5, 105, 80.0, 8, 4, "4 Street", "Panel", 8));</p>
+        
+        <p style="text-indent:120px" class="text2"> houses.add(new House(6, 106, 90.5, 10, 5, "5 Street", "Monolithic", 20));</p></br>
+
+        <p style="text-indent:80px" class="text2"> houses.add(new House(7, 107, 42.0, 1, 1, "Main Street", "Brick", 25));</p>
+        <p style="text-indent:80px" class="text2"> houses.add(new House(8, 108, 66.5, 6, 3, "2 Street", "Panel", 6));</p>
+        <p style="text-indent:80px" class="text2"> houses.add(new House(9, 109, 78.0, 4, 4, "3 Street", "Brick", 12));</p>
+
+        <p style="text-indent:120px" class="text2"> houses.add(new House(10, 110, 58.5, 9, 3, "6 Street", "Monolithic", 10));</p></br>
+        
+        <p style="text-indent:80px" class="text2"> Scanner scanner = new Scanner(System.in);</p></br>
+          
+        <p style="text-indent:160px" class="text2"> System.out.println("Введите количество комнат для поиска квартир:");</p>
+
+        <p style="text-indent:80px" class="text2"> int rooms = scanner.nextInt();</p>
+        <p style="text-indent:80px" class="text2"> System.out.println("Квартиры с " + rooms + " комнатами:");</p>
+        <p style="text-indent:80px" class="text2"> for (House house : houses) {</p>
+        <p style="text-indent:120px" class="text2"> if (house.getNumberOfRooms() == rooms) {</p>
+        <p style="text-indent:140px" class="text2"> System.out.println(house);</p>
+        <p style="text-indent:120px" class="text2"> }</p>
+        <p style="text-indent:80px" class="text2"> }</p>
+
+        <p style="text-indent:160px" class="text2"> System.out.println("\nВведите количество комнат для поиска квартир с диапазоном этажей:");</p>
+
+        <p style="text-indent:80px" class="text2"> rooms = scanner.nextInt();</p>
+        <p style="text-indent:80px" class="text2"> System.out.println("Введите минимальный этаж:")</p>
+        <p style="text-indent:80px" class="text2"> int minFloor = scanner.nextInt();</p>
+        <p style="text-indent:80px" class="text2"> System.out.println("Введите максимальный этаж:");</p>
+        <p style="text-indent:80px" class="text2"> int maxFloor = scanner.nextInt();</p>
+
+        <p style="text-indent:80px" class="text2"> System.out.println(</p>
+
+        <p style="text-indent:160px" class="text2"> "Квартиры с " + rooms + " комнатами и этажом в диапазоне от " + minFloor + " до " + maxFloor + ":");</p>
+
+        <p style="text-indent:80px" class="text2"> for (House house : houses) {</p>
+
+        <p style="text-indent:160px" class="text2"> if (house.getNumberOfRooms() == rooms && house.getFloor() >= minFloor && house.getFloor() <= maxFloor) {</p>
+        <p style="text-indent:160px" class="text2"> System.out.println(house);</p>
+        <p style="text-indent:120px" class="text2"> }</p>
+        <p style="text-indent:80px" class="text2"> }</p></br>
+
+<p style="text-indent:120px" class="text2"> System.out.println("\nВведите минимальную площадь для поиска квартир:");</p>
+<p style="text-indent:80px" class="text2"> double area = scanner.nextDouble();</p>
+<p style="text-indent:120px" class="text2"> System.out.println("Квартиры с площадью более " + area + " кв. метров:");</p>
+<p style="text-indent:80px" class="text2"> for (House house : houses) {</p>
+<p style="text-indent:120px" class="text2"> if (house.getArea() > area) {</p>
+<p style="text-indent:160px" class="text2"> System.out.println(house);</p>
+<p style="text-indent:120px" class="text2"> }</p>
+<p style="text-indent:80px" class="text2"> }</p>
+<p style="text-indent:40px" class="text2"> }</p>
+<p class="text2"> }</p>
+
+
+          </td>
+          </tr>
+<tr> 
+    <td>
+    <p class="text"> Скриншот результата </p>
+    <img class="img" src="https://github.com/newsadness/Task-number-2/blob/main/2.png?raw=true">
+    </td>
+</tr>
+          <tr>
+             <td> 
+                 <a href="https://newsadness.github.io/1st-week/"> 
+                   <button class="button"> назад </button> 
+                 </a> 
+            </td>
+          </tr>
+        </table> 
+    </body>
+</html>
+</DOCTYPE>
